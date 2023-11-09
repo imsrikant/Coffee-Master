@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+.brand {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  background-color: #43281c;
+  column-gap: 4px;
+  color: #fbf2c0;
+}
+
+.brand-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size:24px;
+}
+
+.brand-img {
+  height: 24px;
+}
+
+/* Main */
+.container {
+  display: grid;
+  grid-template-areas:
+    "items  customer"
+    "bills  bills"
+    "place-order  place-order"
+  ;
+  grid-template-columns: 4.5fr 4fr;
+  row-gap: 48px;
+  column-gap: 20px;
+  padding: 22px;
+  background-color:#eeeeee;
+}
+
+
+/* Items */
+.items {
+  display: grid;
+  grid-area: items;
+  grid-template-areas:
+    "items-title";
+  row-gap: 12px;
+  padding: 20px;
+  background-color: #eee1d5;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+}
+
+.items-title {
+  font-size: 18px;
+  color: #885a2d;
+  grid-area: items-title;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.items-list {
+  display: flex;
+  flex-direction: column;
+  row-gap:12px;
+}
+.item {
+  display: grid;
+  grid-template-areas: "quantity    info    price";
+  grid-template-columns: .8fr 3fr 2fr;
+  align-items: flex-start;
+  border-bottom: 2px solid #B08968;
+}
+
+.no-border {
+  border:none;
+}
+
+.item-info {
+  margin-bottom: 12px;
+}
+.item-name,
+.item-price {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.item-details {
+  font-size: 14px;
+  color: #B08968;
+  margin-bottom: 4px;
+}
+
+.item-price {
+  text-align: right;
+}
+
+/* Customer details */
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: customer;
+  gap: 25px;
+}
+
+.customer-name,
+.paymet-details {
+  padding: 14px;
+  background-color: #eee1d5;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+}
+
+.customer-name-title,
+.payment-detail-title {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #885a2d;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 24px;
+  padding: 8px;
+  padding-left: 20px;
+  border: 2px solid #885a2d;
+  background-color: #eee1d5;
+}
+
+.input-title {
+  position: relative;
+  top: 11px;
+  left: 20px;
+  padding: 2px;
+  font-size: 14px;
+  color: #885a2d;
+  background-color: #eee1d5;
+}
+
+
+.input-ccv {
+  width: 40%;
+}
+
+.total-bill {
+  grid-area: bills;
+}
+
+.total-bill {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.sub-total,
+.tax,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.total{
+  font-weight: 800;
+}
+
+.place-order {
+  grid-area: place-order;
+  width: 100%;
+  background-color: #deb993;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 32px;
+}

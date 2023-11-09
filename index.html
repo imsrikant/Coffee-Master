@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Coffee Masters</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="brand">
+    <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="logo"
+      class="brand-img" />
+    <h1 class="brand-name">Coffee Masters</h1>
+  </header>
+
+  <main class="container">
+    <section class="items">
+      <h2 class="items-title">Items</h2>
+
+      <div class="items-list">
+        <div class="item">
+          <p class="item-quantity">1x</p>
+          <div class="item-info">
+            <p class="item-name">Cappuccino</p>
+            <p class="item-details">Light Foam</p>
+          </div>
+          <p class="item-price">$6.00</p>
+        </div>
+        <div class="item">
+          <p class="item-quantity">1x</p>
+          <div class="item-info">
+            <p class="item-name">Cappuccino</p>
+            <p class="item-details">Almond Milk</p>
+            <p class="item-details">Double Espresso Shot</p>
+          </div>
+          <p class="item-price">$7.90</p>
+        </div>
+        <div class="item no-border">
+          <p class="item-quantity">1x</p>
+          <div class="item-info">
+            <p class="item-name">Croissant</p>
+            <p class="item-details">Butter</p>
+          </div>
+          <p class="item-price">$6.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-details">
+
+      <div class="customer-name">
+        <h2 class="customer-name-title">Name</h2>
+        <label for="name" class="input-title">Name for Order</label>
+        <input type="text" id="name" class="input" />
+      </div>
+      <div class="paymet-details">
+        <h2 class="payment-detail-title">Payment</h2>
+        <div class="payment-detail">
+          <label for="card-number" class="input-title">Card Number</label>
+          <input type="text" id="card-number" class="input card-number" />
+          <label for="ccv-number" class="input-title">CCV</label>
+          <input type="text" id="ccv-number" class="input input-ccv" />
+        </div>
+      </div>
+
+    </section>
+    <section class="total-bill">
+      <div class="sub-total">
+        <p class="sub-total-tittle">Subtotal:</p>
+        <p class="sub-total-price">$19.27</p>
+      </div>
+      <div class="tax">
+        <p class="tax-tittle">Tax:</p>
+        <p class="tax-price">$0.96</p>
+      </div>
+      <div class="total">
+        <p class="total-tittle">Total:</p>
+        <p class="total-price">$20.23</p>
+      </div>
+    </section>
+    <footer class="place-order">Place order</footer>
+  </main>
+</body>
+
+</html>
+<!--
+image link https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png
+
+-->
